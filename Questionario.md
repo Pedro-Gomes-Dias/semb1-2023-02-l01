@@ -1,13 +1,14 @@
 # Questionário Sistemas Embarcados I
 
 ## 1. Explique brevemente o que é compilação cruzada (***cross-compiling***) e para que ela serve.
-
+O compilador cruzado é um compilador que consegue gerar um código executável para uma plataforma diferente da qual o compilador está sendo executado. Esse tipo de compilador é usado para compilar dentro de uma plataforma cuja qual não é capaz de sustentar o processo de compilação, como sistemas embarcados, microcontroladores, microprocessadores, entre outros, os quais não possuem um sistema operacional.
 ## 2. O que é um código de inicialização ou ***startup*** e qual sua finalidade?
-
+Um código de incialização diz respeito a um conjunto de instruções de baixo nível que são executadas quando um sistema computacional é ligado ou quando um programa é iniciado. Este tipo de código tem como função principal realizar tarefas essenciais para a inicialização do sistema, sendo elas a configuração de hardware, inicilização de periféricos, definição de valores iniciais de registradores e memória, entre outras. Em sistemas embarcados, a existência do código de inicialização é indispensável, pois é ele que garante a configuração correta do hardware e também que o dispositivo esteja pronto para executar o software específico.
 ## 3. Sobre o utilitário **make** e o arquivo **Makefile responda**:
 
 #### (a) Explique com suas palavras o que é e para que serve o **Makefile**.
-
+O "Makefile" é um arquivo de configuração, utilizado em projetos de desenvolvimento de software, que automatiza o processo de compição e construção de programas. Ele é composto por um conjunto de regras e comandos que ditam como os diferentes componentes de software devem ser compilados e linkados para finalmente gerar o executável.
+Dentre suas principais finalidades temos, a automatização de compilação, a gestão de dependências, a organização do projeto, a portabilidade do código-fonte e execução de algumas tarefas adicionais (limpeza de arquivos temporários, execução de testes automatizados, entre outros).
 #### (b) Descreva brevemente o processo realizado pelo utilitário **make** para compilar um programa.
 
 #### (c) Qual é a sintaxe utilizada para criar um novo **target**?
